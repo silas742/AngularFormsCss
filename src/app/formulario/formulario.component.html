@@ -1,0 +1,49 @@
+<div class="principal">
+    <article class="conteudo">
+        <header class="titulo">
+            Fatec
+        </header>
+        <div class="corpo">
+            Cursos na área de tecnologia.
+        </div>
+    </article>        
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="form-group col-12">
+                    <label for="nomeInput">Nome</label>
+                    <input type="text" placeholder="nome" class="form-control p-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="foneInput">Idade</label>
+                    <input type="text" placeholder="idade" class="form-control p-4">
+                </div>
+                
+
+                <div class="form-group col-md-4">
+                    <label for="cursoInput">Cursos</label>
+                    <select name="" id="cursoInput" class="form-control">
+                        <option value="">Selecione</option>
+                        <option>Analise de sistemas</option>
+                        <option>Eventos</option>
+                        <option>Gestão comercial</option>
+                        <option>Recursos humanos</option>
+                        <option>Gestão empresarial</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div  [ngStyle]="{ 'margin-top': '4px'}" class="col-12">
+                    <button [ngStyle]="EstilosParaBotao()" (click)=gerarValor() type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>
+        <footer [ngClass]="ObterClassesRodape()">
+            Silas. 2020. Exercicio.
+        </footer>
+    </div>
+</div>
